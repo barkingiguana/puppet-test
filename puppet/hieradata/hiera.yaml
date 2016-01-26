@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - common
+  - "node/%{::fqdn}"
+  - "environments/%{::environment}"
+  - global
+:yaml:
+  :datadir: /vagrant/puppet/hieradata
